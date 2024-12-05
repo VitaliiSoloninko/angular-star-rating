@@ -1,1 +1,19 @@
 <h1>Star rating</h1>
+<h2>Standard [stars]="0" [size]="1rem"</h2>
+<app-star-rating></app-star-rating>
+
+<h2>With settings [stars]="0.5" [size]="2rem"</h2>
+<app-star-rating [stars]="0.5" [size]="2"></app-star-rating>
+
+<h2>With settings 3 rem</h2>
+<app-star-rating [stars]="1.5" [size]="3"></app-star-rating>
+
+<h2>With settings 4 rem</h2>
+<app-star-rating [stars]="4" [size]="5"></app-star-rating>
+
+<h2>Dark mode</h2>
+<div class="dark-background">
+  <img src="/stars/star-dark-full.svg" style="width: 4rem" />
+  <img src="/stars/star-dark-haft.svg" style="width: 4rem" />
+  <img src="/stars/star-dark-empty.svg" style="width: 4rem" />
+</div>

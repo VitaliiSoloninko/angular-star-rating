@@ -1,1 +1,11 @@
-<p>star-rating works!</p>
+<!-- <img src="/stars/star-full.svg" alt="Star" />
+<img src="/stars/star-haft.svg" alt="Star" />
+<img src="/stars/star-empty.svg" alt="Star" /> -->
+
+<div class="container">
+  <img
+    *ngFor="let current of [1, 2, 3, 4, 5]"
+    [src]="getStarImage(current)"
+    [ngStyle]="styles"
+  />
+</div>
